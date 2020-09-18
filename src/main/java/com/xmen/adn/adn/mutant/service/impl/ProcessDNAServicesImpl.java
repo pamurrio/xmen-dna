@@ -23,7 +23,7 @@ public class ProcessDNAServicesImpl implements ProcessDNAServices {
                 "CCCC",
                 "GGGG"
         };
-        if (dna.length < 0) {
+        if (dna.length < 1) {
             return false;
         }
         if (dna[0] == null || dna[0].length() < 0) {

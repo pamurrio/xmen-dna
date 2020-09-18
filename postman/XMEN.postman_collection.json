@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "bec63630-a65b-4637-94b1-ee6153919299",
+		"name": "XMEN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "isMutant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"dna\":[\r\n    \"ATGCGA\",\r\n    \"CAGTGC\",\r\n    \"TTATGT\",\r\n    \"TGAAGG\",\r\n    \"CCCCTA\",\r\n    \"TCACTG\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/mutant/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mutant",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "stats",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"dna\":[\"ATGCGA\",\"CAGTGC\",\"TTATGT\",\"AGAAGG\",\"CCCCTA\",\"TCACTG\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/stats/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stats",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
